@@ -5189,6 +5189,8 @@ configure_dns64() {
     
     # 写入 DNS64 服务器
     cat > /etc/resolv.conf << 'EOF'
+nameserver 2001:4860:4860::8888
+nameserver 2001:4860:4860::8844
 nameserver 2a00:1098:2b::1
 nameserver 2001:4860:4860::6464
 nameserver 2a00:1098:2c::1
